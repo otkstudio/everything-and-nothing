@@ -21,12 +21,16 @@ cat > "$html" <<'HEAD'
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal</title>
+<title>Everything and Nothing</title>
 <style>
 html { font-size: 20px; }
 body { margin: 0; background: #fff; color: #111;
-       font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.5; }
-main { max-width: 34rem; margin: 0 auto; padding: 6rem 1.5rem; }
+       font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.5;
+       -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+       -webkit-text-stroke: 0.2px currentColor; }
+main { max-width: 27rem; margin: 0 auto; padding: 6rem 1.5rem; }
+header { margin: 0 0 4rem; }
+header h1 { margin: 0; font-size: 1rem; font-weight: normal; font-style: italic; }
 article { margin: 0 0 4rem; }
 article time { display: block; font-style: italic; margin-bottom: 1.5rem; }
 article p { margin: 0 0 1rem; }
@@ -38,6 +42,7 @@ a { color: inherit; }
 </head>
 <body>
 <main>
+<header><h1>Everything and Nothing</h1></header>
 HEAD
 
 # --- entries, newest first (plain filename sort works thanks to YYYY-MM-DD) ---
